@@ -1,0 +1,11 @@
+<p><%= @article.title %>
+</p>
+<p><%= @article.content %></p>
+<p><%= link_to "edit this shit", edit_article_path %></p>
+
+<p><%= link_to "back to home", articles_path %></p>
+
+<p><%= link_to "delete", article_path(@article),
+  method: :delete,
+  data: {confirm: "真的delete?"}
+ %></p>
